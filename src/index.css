@@ -1,0 +1,17 @@
+:root{
+  --font-display : 'Space Grotesk', sans-serif;
+  --navy-950: #0A121E;
+    --navy-900: #0D1726;
+    --navy-800: #101B2D;
+    --navy-700: #16223a;
+    --azure: #00AEEF;
+    --azure-deep: #0077B6;
+    --white: #FFFFFF;
+    --ice: #C9DCE8;
+    --ice-dim: #7f96ab;
+}
+.body{
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}

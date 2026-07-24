@@ -1,0 +1,16 @@
+.test{
+    font-family: var(--font-display);
+    font-weight: 800;
+    display: flex;
+    font-size: 28px;
+    align-items: center;
+}
+.test strong{
+     font-family: var(--font-display);
+    font-weight: 900;
+    color: var(--azure);
+    padding-left: 3px;
+}
+.test img {
+    padding-right: 20px;
+}
