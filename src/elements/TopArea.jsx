@@ -5,9 +5,19 @@ function TopArea(){
         <>
 
         <div className="topArea">
-            <p className="test"><img src={Logo} width={38} height={38} />KOUDELKA <strong>DEV</strong></p>
+            <p className="logo"><img src={Logo} width={48} height={48} />KOUDELKA <strong>DEV</strong></p>
+
+            <nav className="navigation">
+               <ul>
+                    <li>Services</li>
+                    <li>Process</li>
+                    <li>Works</li>
+                    <li>FAQ</li>
+               </ul>
+            </nav>
+            <button>New project</button>
         </div>
-        
+
         </>
     )
 }

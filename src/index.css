@@ -10,8 +10,11 @@
     --ice: #C9DCE8;
     --ice-dim: #7f96ab;
 }
-.body{
+*, *::before, *::after {
   box-sizing: border-box;
+}
+
+body {
   margin: 0;
-  padding:0;
+  padding: 0;
 }
