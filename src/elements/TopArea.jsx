@@ -4,7 +4,7 @@ function TopArea(){
     return(
         <>
 
-        <div className="topArea">
+        <header className="topArea">
             <p className="logo"><img src={Logo} width={48} height={48} />KOUDELKA <strong>DEV</strong></p>
 
             <nav className="navigation">
@@ -16,7 +16,7 @@ function TopArea(){
                </ul>
             </nav>
             <button>New project</button>
-        </div>
+        </header>
 
         </>
     )

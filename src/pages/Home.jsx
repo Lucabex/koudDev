@@ -1,14 +1,50 @@
 import Logo from '../assets/koudelka-logo-final.svg'
 import TopNav from '../elements/TopArea.jsx'
 import Ves from '../assets/vesuvio.png'
+import Napoli from '../assets/naples.png'
 import { Dot } from 'lucide-react'
 import { ArrowRight,Layout, Wrench, RefreshCw, TrendingUp, ShoppingCart, Smartphone,MapPin } from 'lucide-react'
+import { useState } from 'react'
+import { Plus } from 'lucide-react'
+
+ 
+
+const faqData = [
+  {
+    q: "How long does a typical project take?",
+    a: "A single-page site usually takes 1–2 weeks from first call to launch. A full platform with bookings, admin dashboards, or custom software can run 4–8 weeks depending on scope — you'll get a clear timeline after the discovery stage, not a vague estimate."
+  },
+  {
+    q: "Do I need to know what I want before reaching out?",
+    a: "No. Most people start with a rough idea, not a finished brief. The discovery call is where that gets shaped into something concrete."
+  },
+  {
+    q: "What happens after the site goes live?",
+    a: "Support doesn't stop at launch. Small fixes, content updates, and adjustments as the business changes are part of the process, not a separate paid extra for the first period after handoff."
+  },
+  {
+    q: "Can you redesign an existing website instead of building from scratch?",
+    a: "Yes — redesigns are common. Sometimes it's a full rebuild, sometimes it's keeping the structure and improving performance, design, or SEO on top of what's already there."
+  },
+  {
+    q: "Do you build mobile apps as well as websites?",
+    a: "Yes, cross-platform apps for iPhone and Android, alongside web and software work — often the two are connected, like a booking site with a companion app."
+  }
+]
+
+
+   
 function Home(){
+    const [openIndex, setOpenIndex] = useState(null)
+
+    const toggle = (i) => {
+        setOpenIndex(openIndex === i ? null : i)
+    }
     return(
         <>
-        <header>
+  
              <TopNav />
-        </header>
+        
         <section className="hero">
             <div className="heroGrid">
 
@@ -100,16 +136,98 @@ function Home(){
 </section>
 
 <section className="getInTouchBox">
-    
+     <span className="getEye">GET IN TOUCH</span>
+     <h2>Have a project worth building properly?</h2>
+     <span>Tell me what the business needs — a site, an app, an internal tool, or all three — and I'll get back to you with next steps.</span>
+     <button className='emailBtn'>Email the Studio</button>
 </section>
-<section className="processBox">
+<section className='process'>
+ <div className="processBox">
     <div className="processHeader">
          <span className="eyebrow">HOW IT WORKS</span>
          <h2>What happens after that first call.</h2>
          <p>Four stages take it from an idea to something live — the same process whether it's a single page or a full platform.</p>
     </div>
+    <div className="processGrid">
+        <div className="processGridBox">
+            <span >
+                01
+            </span>
+            <h3>
+                DISCOVERY
+            </h3>
+            <p>
+                Understand the business, the users, and what the project actually needs to do.
+            </p>
+        </div>
+        <div className="processGridBox">
+            <span >
+                02
+            </span>
+            <h3>
+                BUILD
+            </h3>
+            <p>
+                Design and development in step, with working versions to react to early.
+            </p>
+        </div>
+        <div className="processGridBox">
+            <span >
+                  03
+            </span>
+            <h3>
+                SHIP
+            </h3>
+            <p>
+                Tested across devices, launched, with analytics wired in from day one.
+            </p>
+        </div>
+        <div className="processGridBox">
+            <span >
+                04
+            </span>
+            <h3>
+                SUPPORT
+            </h3>
+            <p>
+                Fixes, updates, and small improvements as the business changes.
+            </p>
+        </div>
 
+    </div>
+</div>
 </section>
+  <section className="faqBox" id="faq">
+            <div className="faqHeader">
+                <span className="eyebrow">FAQ</span>
+                <h2>Questions worth answering upfront.</h2>
+                <p>If something's not covered here, that's what the first call is for.</p>
+            </div>
+
+            <div className="faqList">
+                {faqData.map((item, i) => (
+                    <div className={`faqItem ${openIndex === i ? 'open' : ''}`} key={i}>
+                        <button className="faqQuestion" onClick={() => toggle(i)} aria-expanded={openIndex === i}>
+                            <span>{item.q}</span>
+                            <Plus size={20} className="faqIcon" />
+                        </button>
+                        <div className="faqAnswer">
+                            <p>{item.a}</p>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </section>
+        <section className="works">
+            <div className="worksBox">
+                <div className="worksHeader">
+
+                </div>
+                <div className="worksGrid">
+                    
+                </div>
+            </div>
+        </section>
        
        
    

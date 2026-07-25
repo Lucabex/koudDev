@@ -12,6 +12,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
 .heroContent{
     display: flex;
     justify-content: center;
@@ -58,6 +59,7 @@ margin: 0;
     display: flex;
     width: 400px;
     height: 64px;
+     cursor: pointer;
 }
 
 .btn{
@@ -88,18 +90,21 @@ margin: 0;
     color: var(--white);
     z-index: 1;
     animation-delay: 0.1s;
+     cursor: pointer;
 }
 .btn.mid{
     background: linear-gradient(135deg, var(--azure), var(--azure-deep));
     color: var(--white);
     z-index: 2;
     animation-delay: 0.25s;
+     cursor: pointer;
 }
 .btn.light{
     background: var(--white);
     color: var(--navy-950);
     z-index: 3;
     animation-delay: 0.4s;
+     cursor: pointer;
 }
 
 @keyframes slideIn{
@@ -298,15 +303,35 @@ margin: 0;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: linear-gradient(135deg,rgb(209, 243, 252),var(--azure-deep));
+    padding: 125px 130px;
 }
+.getEye{
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: 25px;
+    color: var(--navy-850);
 
+}
+.getInTouchBox h2{
+    color: var(--white);
+    font-weight: 900;
+    font-family: var(--font-display);
+    font-size: 32px;
+}
+.getInTouchBox span{
+    font-family: var(--font-display);
+}
 
 
 .processBox{
     width: 100%;
-    padding: 80px 50px;
-    height: 400px;
+    padding:80px 50px;
+   
     background-color:var(--navy-950);
+display: flex;
+flex-direction: column;
+
 }
 .processHeader{
     max-width: 640px;
@@ -325,4 +350,142 @@ margin: 0;
     font-size: 16px;
     color: var(--ice-dim);
     margin: 0;
+}
+.emailBtn{
+    clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 100%, 0 100%);
+    font-family: var(--font-display);
+    font-size: 16px;
+    padding: 10px 25px;
+    background: linear-gradient(135deg, rgb(250, 180, 180), red);
+    border: none;
+    border-radius: 10px 0 0 10px;
+    color: white;
+    font-family: var(--font-display);
+    font-weight: 500;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.processGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0 65px;
+    background-color: var(--navy-800);
+}
+.processGridBox{
+    width: 250px;
+    border-top:1px solid #01a2e2;
+    padding: 15px 20px;
+}
+.processGridBox span{
+    color: var(--azure);
+    font-family: var(--font-display);
+    font-weight: 800;
+}
+.processGridBox h3{
+    font-family: var(--font-display);
+    color: var(--white);
+}
+.processGridBox p{
+     font-family: var(--font-display);
+        color: var(--ice-dim);
+}
+.faqBox{
+    width: 100%;
+    padding: 100px 50px;
+    background: var(--white);
+}
+
+.faqHeader{
+    max-width: 640px;
+    margin: 0 auto 56px;
+}
+
+.faqHeader h2{
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 34px;
+    margin: 14px 0 12px;
+    color: var(--navy-950);
+}
+
+.faqHeader p{
+    font-family: var(--font-display);
+    font-size: 16px;
+    color: var(--navy-950);
+    margin: 0;
+}
+
+.faqList{
+    max-width: 780px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: rgba(0, 174, 239, 0.18);
+    border: 1px solid rgba(0, 174, 239, 0.18);
+}
+
+.faqItem{
+    background: var(--white);
+}
+
+.faqQuestion{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 24px 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 17px;
+    var(--navy-950);
+}
+
+.faqIcon{
+    flex-shrink: 0;
+    color: var(--azure);
+    transition: transform 0.25s ease;
+}
+
+.faqItem.open .faqIcon{
+    transform: rotate(45deg);
+}
+
+.faqAnswer{
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease;
+}
+
+.faqItem.open .faqAnswer{
+    grid-template-rows: 1fr;
+}
+
+.faqAnswer p{
+    overflow: hidden;
+    margin: 0;
+    padding: 0 28px;
+    font-family: var(--font-display);
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--ice-dim);
+}
+
+.faqItem.open .faqAnswer p{
+    padding: 0 28px 24px;
+}
+
+@media (max-width: 560px){
+    .faqBox{
+        padding: 60px 24px;
+    }
+    .faqQuestion{
+        padding: 20px;
+        font-size: 15px;
+    }
 }
