@@ -443,7 +443,7 @@ flex-direction: column;
     font-family: var(--font-display);
     font-weight: 600;
     font-size: 17px;
-    var(--navy-950);
+    color:var(--navy-950);
 }
 
 .faqIcon{
@@ -488,4 +488,79 @@ flex-direction: column;
         padding: 20px;
         font-size: 15px;
     }
+}
+.worksBox{
+    width: 100%;
+       background: linear-gradient(135deg,rgb(209, 243, 252),var(--azure-deep));
+     
+       padding: 40px 80px;
+}
+.worksBox span{
+ font-family: var(--font-display);
+ font-weight: 800;
+ color: var(--ice-dim);
+}
+.worksBox h2{
+ font-family: var(--font-display);
+ font-size: 32px;
+ color: var(--navy-800);
+}
+
+.worksGrid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.workCard{
+    width: 500px;
+    height: 400px;
+    background-color: var(--navy-800);
+    
+    display: grid;
+    grid-template-rows: 1.2fr 0.8fr;
+}
+.cardTop{
+background-color: rgba(0, 0, 255, 0.325);
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.cardBottom{
+
+padding: 10px 35px;
+
+
+}
+.cardBottom span{
+font-family: var(--font-display);
+font-size: 12px;
+color: red;
+font-weight: 800;
+}
+.cardBottom h2{
+    font-family: var(--font-display);
+font-size: 20px;
+color: var(--white);
+font-weight: 800;
+}
+.cardBottom p{
+     font-family: var(--font-display);
+font-size: 14px;
+color: var(--ice-dim);
+font-weight: 800;
+}
+#live{
+    color: limegreen;
+}
+
+.cardTop span{
+    color: white;
+    font-family: var(--font-display);
+    font-size: 30px;
+
+}
+.cardTop strong{
+color: red;
 }

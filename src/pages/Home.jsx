@@ -221,10 +221,33 @@ function Home(){
         <section className="works">
             <div className="worksBox">
                 <div className="worksHeader">
+                    <span>RECENT WORKS</span>
+                    <h2>Built, not templated</h2>
 
                 </div>
                 <div className="worksGrid">
-                    
+                    <div className="workCard">
+                        <div className="cardTop">
+                           <span>POWER<strong>ROD</strong></span>
+
+                        </div>
+                        <div className="cardBottom">
+                            <span>Live 1st of september 26</span>
+                            <h2>Power Rod — Drainage & Plumbing</h2>
+                            <p>A services site for a plumbing and drainage company covering Hertfordshire, Bedfordshire, and Buckinghamshire.</p>
+                        </div>
+                    </div>
+                    <div className="workCard">
+                        <div className="cardTop">
+                            <span>Luton Dog Boarding</span>
+                        </div>
+                        <div className="cardBottom">
+                            <span id="live">Live</span>
+                            <h2>Luton Dog Boarding</h2>
+                            <p>A full-stack booking platform for a licensed home boarding business, admin dashboard, reviews, and automated booking emails.</p>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
