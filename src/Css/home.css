@@ -369,12 +369,13 @@ flex-direction: column;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 0 65px;
-    background-color: var(--navy-800);
+    
 }
 .processGridBox{
     width: 250px;
     border-top:1px solid #01a2e2;
     padding: 15px 20px;
+    background-color: var(--navy-800);
 }
 .processGridBox span{
     color: var(--azure);
@@ -563,4 +564,17 @@ font-weight: 800;
 }
 .cardTop strong{
 color: red;
+}
+.footerBox{
+    width: 100%;
+    padding:15px 15px;
+    background-color: var(--navy-800);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.footerBox span{
+    font-family: var(--font-display);
+    color: var(--azure);
+    padding-top: 35px;
 }

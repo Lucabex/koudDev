@@ -104,7 +104,7 @@ function Home(){
         </div>
     </div>
 </section>
-<section className="servicesBox">
+<section className="servicesBox" id='services'>
     <div className="servicesHeader">
          <span className="eyebrow">WHAT WE DO</span>
          <h2>Four ways to grow your business.</h2>
@@ -141,14 +141,14 @@ function Home(){
      <span>Tell me what the business needs — a site, an app, an internal tool, or all three — and I'll get back to you with next steps.</span>
      <button className='emailBtn'>Email the Studio</button>
 </section>
-<section className='process'>
+<section className='process' id='process'>
  <div className="processBox">
     <div className="processHeader">
          <span className="eyebrow">HOW IT WORKS</span>
          <h2>What happens after that first call.</h2>
          <p>Four stages take it from an idea to something live — the same process whether it's a single page or a full platform.</p>
     </div>
-    <div className="processGrid">
+    <div className="processGrid" >
         <div className="processGridBox">
             <span >
                 01
@@ -218,11 +218,11 @@ function Home(){
                 ))}
             </div>
         </section>
-        <section className="works">
+        <section className="works" id='work'>
             <div className="worksBox">
                 <div className="worksHeader">
-                    <span>RECENT WORKS</span>
-                    <h2>Built, not templated</h2>
+                    <span>MOST RECENT WORKS</span>
+                    <h2>Built, not templated!</h2>
 
                 </div>
                 <div className="worksGrid">
@@ -249,6 +249,12 @@ function Home(){
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section className="footer">
+            <div className="footerBox">
+  <p className="logo"><img src={Logo} width={48} height={48} />KOUDELKA <strong>DEV</strong></p>
+  <span>© 2026 Koudelka Development. Based in Luton, UK.</span>
             </div>
         </section>
        
