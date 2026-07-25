@@ -27,7 +27,7 @@
 .logo img {
     padding-right: 20px;
 }
-.topArea p{
+.navigation{
   
 }
 .navigation ul{
@@ -58,4 +58,7 @@ font-family:  var(--font-display);
     font-family: var(--font-display);
     font-weight: 500;
 }
+@media (max-width:740px){
+.navigation{display: none;}
 
+}

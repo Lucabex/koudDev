@@ -7,8 +7,9 @@
     --azure: #00AEEF;
     --azure-deep: #0077B6;
     --white: #FFFFFF;
-    --ice: #C9DCE8;
+    --ice: #d3e2eb;
     --ice-dim: #7f96ab;
+     --white: white;
 }
 *, *::before, *::after {
   box-sizing: border-box;
