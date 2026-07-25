@@ -3,7 +3,7 @@ import TopNav from '../elements/TopArea.jsx'
 import Ves from '../assets/vesuvio.png'
 import Napoli from '../assets/naples.png'
 import { Dot } from 'lucide-react'
-import { ArrowRight,Layout, Wrench, RefreshCw, TrendingUp, ShoppingCart, Smartphone,MapPin } from 'lucide-react'
+import { ArrowRight,Layout, Wrench, RefreshCw, TrendingUp, ShoppingCart, Smartphone,MapPin,Phone,Mail } from 'lucide-react'
 import { useState } from 'react'
 import { Plus } from 'lucide-react'
 
@@ -44,7 +44,7 @@ function Home(){
         <>
   
              <TopNav />
-        
+        <main>
         <section className="hero">
             <div className="heroGrid">
 
@@ -67,7 +67,7 @@ function Home(){
                 </div>
 
                 <div className="bigLogo">
-                    <img src={Logo} alt="" width={408} height={408}/>
+                    <img src={Logo} alt="Big Logo" width={408} height={408}/>
                 </div>
 
 
@@ -233,7 +233,7 @@ function Home(){
                         </div>
                         <div className="cardBottom">
                             <span>Live 1st of september 26</span>
-                            <h2>Power Rod — Drainage & Plumbing</h2>
+                            <h3>Power Rod — Drainage & Plumbing</h3>
                             <p>A services site for a plumbing and drainage company covering Hertfordshire, Bedfordshire, and Buckinghamshire.</p>
                         </div>
                     </div>
@@ -243,7 +243,7 @@ function Home(){
                         </div>
                         <div className="cardBottom">
                             <span id="live">Live</span>
-                            <h2>Luton Dog Boarding</h2>
+                            <h3>Luton Dog Boarding</h3>
                             <p>A full-stack booking platform for a licensed home boarding business, admin dashboard, reviews, and automated booking emails.</p>
 
                         </div>
@@ -253,13 +253,24 @@ function Home(){
         </section>
         <section className="footer">
             <div className="footerBox">
-  <p className="logo"><img src={Logo} width={48} height={48} />KOUDELKA <strong>DEV</strong></p>
-  <span>© 2026 Koudelka Development. Based in Luton, UK.</span>
+                <p className="logo"><img src={Logo} width={48} height={48} alt="Koudelka Development logo" />KOUDELKA <strong>DEV</strong></p>
+                <span>© 2026 Koudelka Development. Based in Luton, UK.</span>
+                <div className="contactBox">
+                    <span><Phone size={14}/><a href="tel:07585626737">07585626737</a> </span>
+                    <span><MapPin size={14}/> <a className="mapLink"
+                                    href="https://www.google.com/maps/search/?api=1&query=Luton"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Luton , Bedfordshire ,England ,Uk
+                                </a> </span>
+                    <span><Mail size={14}/> Lucabex@gmail.com</span>
+                </div>
             </div>
         </section>
        
        
-   
+   </main>
         </>
     )
 }

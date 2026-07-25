@@ -5,14 +5,29 @@ function TopArea(){
         <>
 
         <header className="topArea">
-            <p className="logo"><img src={Logo} width={48} height={48} />KOUDELKA <strong>DEV</strong></p>
+            <p className="logo"><img src={Logo} width={48} height={48}  alt="Koudelka Development logo"/>KOUDELKA <strong>DEV</strong></p>
 
             <nav className="navigation">
                <ul>
-                    <li>Services</li>
-                    <li>Process</li>
-                    <li>Works</li>
-                    <li>FAQ</li>
+                    <li>  
+                        <a href="#services" className="topButton">
+                            Services  
+                        </a></li>
+                    <li>
+                        <a href="#process" className="topButton">
+                            Process  
+                        </a>
+                    </li>
+                    <li>  
+                        <a href="#work" className="topButton">
+                            Work  
+                        </a>
+                    </li>
+                    <li>  
+                        <a href="#faq" className="topButton">
+                            FAQ  
+                        </a>
+                    </li>
                </ul>
             </nav>
             <button>New project</button>

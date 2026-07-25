@@ -540,7 +540,7 @@ font-size: 12px;
 color: red;
 font-weight: 800;
 }
-.cardBottom h2{
+.cardBottom h3{
     font-family: var(--font-display);
 font-size: 20px;
 color: var(--white);
@@ -567,7 +567,7 @@ color: red;
 }
 .footerBox{
     width: 100%;
-    padding:15px 15px;
+    padding:25px 15px;
     background-color: var(--navy-800);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -577,4 +577,27 @@ color: red;
     font-family: var(--font-display);
     color: var(--azure);
     padding-top: 35px;
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+.contactBox{
+  
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    padding-left: 55px;
+   
+    
+    
+}
+.contactBox span{
+    color: var(--azure);
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-display);
+}
+.contactBox a{
+    text-decoration: none;
+     color: var(--azure);
 }
