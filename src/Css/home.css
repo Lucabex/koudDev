@@ -826,3 +826,60 @@ color: red;
 @media (max-width: 560px){
     .pricingBox{ padding: 60px 24px; }
 }
+@media (max-width: 900px){
+    .processGrid{
+        grid-template-columns: 1fr 1fr;
+        padding: 0 40px;
+        gap: 20px;
+    }
+    .processGridBox{
+        width: auto;
+    }
+}
+@media (max-width: 560px){
+    .processBox{
+        padding: 60px 24px;
+    }
+    .processGrid{
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+}
+@media (max-width: 900px){
+    .worksBox{
+        padding: 40px 40px;
+    }
+    .worksGrid{
+        grid-template-columns: 1fr;
+        gap: 24px;
+        justify-items: center;
+    }
+    .workCard{
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        min-height: 360px;
+    }
+}
+@media (max-width: 560px){
+    .worksBox{
+        padding: 40px 20px;
+    }
+}
+@media (max-width: 740px){
+    .footerBox{
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+    .footerBox p{
+        justify-content: center;
+    }
+    .footerBox span{
+        justify-content: center;
+    }
+    .contactBox{
+        padding-left: 0;
+        align-items: center;
+    }
+}
