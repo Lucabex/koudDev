@@ -3,11 +3,56 @@ import TopNav from '../elements/TopArea.jsx'
 import Ves from '../assets/vesuvio.png'
 import Napoli from '../assets/naples.png'
 import { Dot } from 'lucide-react'
-import { ArrowRight,Layout, Wrench, RefreshCw, TrendingUp, ShoppingCart, Smartphone,MapPin,Phone,Mail } from 'lucide-react'
+import { ArrowRight,Layout, Wrench, RefreshCw, TrendingUp, ShoppingCart, Smartphone,MapPin,Phone,Mail,Check } from 'lucide-react'
 import { useState } from 'react'
 import { Plus } from 'lucide-react'
 
- 
+ const pricingTiers = [
+  {
+    name: "Landing",
+    tagline: "Single page WebSite.",
+    price: "250",
+    featured: false,
+    features: [
+      "Single-page site",
+      "Mobile-responsive build",
+      "Contact form",
+      "Basic SEO setup",
+      "30 days of free fixes"
+    ]
+  },
+  {
+    name: "Business",
+    tagline: "A full site for a growing business.",
+    price: "450",
+    featured: true,
+    features: [
+      "Up to 5 pages",
+      "Gallery & content sections",
+      "Enquiry forms",
+      "Analytics from day one",
+      "30 days of free fixes"
+    ]
+  },
+  {
+    name: "Commerce",
+    tagline: "Sell online, built to scale.",
+    price: "1,000",
+    featured: false,
+    features: [
+      "Online store & product pages",
+      "Cart & Stripe checkout",
+      "Order confirmation emails",
+      "Everything in Business",
+      "30 days of free fixes"
+    ]
+  }
+]
+
+const carePlans = [
+  { name: "Care Plan", price: "15", unit: "/mo", desc: "Hosting, backups, security, and small edits handled." },
+  { name: "SEO", price: "150", unit: "/mo", desc: "Local optimisation, content, and monthly reporting." }
+]
 
 const faqData = [
   {
@@ -141,6 +186,50 @@ function Home(){
      <span>Tell me what the business needs — a site, an app, an internal tool, or all three — and I'll get back to you with next steps.</span>
      <button className='emailBtn'>Email the Studio</button>
 </section>
+
+<section className="pricingBox" id="pricing">
+    <div className="pricingHeader">
+        <span className="eyebrow">PRICING</span>
+        <h2>Clear prices, no surprises.</h2>
+        <p>Every build is mobile-responsive and includes 30 days of free fixes after launch. Prices start here and firm up once the scope is clear.</p>
+    </div>
+
+    <div className="pricingGrid">
+        {pricingTiers.map((tier, i) => (
+            <div className={`priceCard ${tier.featured ? 'featured' : ''}`} key={i}>
+                {tier.featured && <span className="popular">Most popular</span>}
+                <span className="priceName">{tier.name}</span>
+                <p className="priceTagline">{tier.tagline}</p>
+                <div className="priceAmount">
+                    <span className="from">from</span>
+                    <span className="amount">£{tier.price}</span>
+                </div>
+                <ul className="priceFeatures">
+                    {tier.features.map((f, j) => (
+                        <li key={j}><Check size={16} /> {f}</li>
+                    ))}
+                </ul>
+                <a href="#contact" className="priceBtn">Start a project <ArrowRight size={16} /></a>
+            </div>
+        ))}
+    </div>
+
+    <div className="recurringStrip">
+        {carePlans.map((plan, i) => (
+            <div className="recurringCard" key={i}>
+                <div className="recurringInfo">
+                    <span className="recurringName">{plan.name}</span>
+                    <p>{plan.desc}</p>
+                </div>
+                <div className="recurringPrice">
+                    <span className="from">from</span>
+                    <span className="amount">£{plan.price}<em>{plan.unit}</em></span>
+                </div>
+            </div>
+        ))}
+    </div>
+</section>
+
 <section className='process' id='process'>
  <div className="processBox">
     <div className="processHeader">
