@@ -30,7 +30,6 @@ import { Plus } from 'lucide-react'
       "Up to 5 pages",
       "Gallery & content sections",
       "Enquiry forms",
-      "Analytics from day one",
       "30 days of free fixes"
     ]
   },
