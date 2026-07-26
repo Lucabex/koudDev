@@ -50,7 +50,8 @@ import { Plus } from 'lucide-react'
 
 const carePlans = [
   { name: "Care Plan", price: "15", unit: "/mo", desc: "Hosting, backups, security, and small edits handled." },
-  { name: "SEO", price: "150", unit: "/mo", desc: "Local optimisation, content, and monthly reporting." }
+  { name: "SEO", price: "150", unit: "/mo", desc: "Local optimisation, content, and monthly reporting." },
+  { name: "Analytics", price: "30", unit: "/mo", desc: "Traffic tracking, visitor insights, and monthly reporting." }
 ]
 
 const faqData = [

@@ -58,7 +58,7 @@ font-family:  var(--font-display);
     font-family: var(--font-display);
     font-weight: 500;
 }
-@media (max-width:740px){
+@media (max-width:768px){
 .navigation{display: none;}
 
 }
