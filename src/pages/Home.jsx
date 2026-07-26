@@ -11,7 +11,8 @@ import { Plus } from 'lucide-react'
   {
     name: "Landing",
     tagline: "Single page WebSite.",
-    price: "250",
+    price: "350",
+    lutonPrice:"250",
     featured: false,
     features: [
       "Single-page site",
@@ -24,7 +25,8 @@ import { Plus } from 'lucide-react'
   {
     name: "Business",
     tagline: "A full site for a growing business.",
-    price: "450",
+    price: "550",
+    lutonPrice:"400",
     featured: true,
     features: [
       "Up to 5 pages",
@@ -36,7 +38,8 @@ import { Plus } from 'lucide-react'
   {
     name: "Commerce",
     tagline: "Sell online, built to scale.",
-    price: "1,000",
+    price: "1,600",
+    lutonPrice:"1000",
     featured: false,
     features: [
       "Online store & product pages",
@@ -200,10 +203,17 @@ function Home(){
                 {tier.featured && <span className="popular">Most popular</span>}
                 <span className="priceName">{tier.name}</span>
                 <p className="priceTagline">{tier.tagline}</p>
-                <div className="priceAmount">
+                <div className="discountOptionGrid">
+                    <div className="priceAmount">
                     <span className="from">from</span>
                     <span className="amount">£{tier.price}</span>
                 </div>
+                <div className="discountDiv">
+                    
+                </div>
+
+                </div>
+                
                 <ul className="priceFeatures">
                     {tier.features.map((f, j) => (
                         <li key={j}><Check size={16} /> {f}</li>
