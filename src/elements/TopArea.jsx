@@ -24,6 +24,11 @@ function TopArea(){
                         </a>
                     </li>
                     <li>  
+                        <a href="#pricing" className="topButton">
+                            Pricing  
+                        </a>
+                    </li>
+                    <li>  
                         <a href="#faq" className="topButton">
                             FAQ  
                         </a>
