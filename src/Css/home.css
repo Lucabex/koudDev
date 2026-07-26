@@ -284,6 +284,10 @@ margin: 0;
         text-align: center;
         align-items: center;
     }
+    .heroContent span{
+        width: 80%;
+        margin-left: 30px;
+    }
     .bigLogo{
         order: -1;
     }
