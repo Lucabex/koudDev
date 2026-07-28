@@ -60,12 +60,20 @@ font-family:  var(--font-display);
 }
 @media (max-width:768px){
 .navigation{display: none;}
-
+.topBtn{
+    text-decoration: none;
+    color: var(--white);
+    max-width: 125px;
+    margin-left: 75px;
+    
+}
 }
 
 .topBtn{
     text-decoration: none;
     color: var(--white);
+  
+
 }
 .topBtn a{
       text-decoration: none;
