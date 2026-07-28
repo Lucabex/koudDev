@@ -63,7 +63,12 @@ font-family:  var(--font-display);
 
 }
 
-.topButton{
+.topBtn{
     text-decoration: none;
     color: var(--white);
+}
+.topBtn a{
+      text-decoration: none;
+    color: var(--white);
+    font-family: var(--font-display);
 }
