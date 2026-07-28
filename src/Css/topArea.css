@@ -64,7 +64,8 @@ font-family:  var(--font-display);
     text-decoration: none;
     color: var(--white);
     max-width: 225px;
-    margin-left: 75px;
+    margin-left: 55px;
+    min-width: 125px;
     
 }
 }
