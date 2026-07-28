@@ -187,7 +187,11 @@ function Home(){
      <span className="getEye">GET IN TOUCH</span>
      <h2>Have a project worth building properly?</h2>
      <span>Tell me what the business needs — a site, an app, an internal tool, or all three — and I'll get back to you with next steps.</span>
-     <button className='emailBtn'>Email the Studio</button>
+     <button className='emailBtn'><a href="mailto:lucabex@gmail.com?subject=New%20Project%20Enquiry&body=KOUDELKADEV%0A%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%0ANew%20Project%20Enquiry%0A%0APlease%20complete%20every%20field%20below%20and%20send%20this%20email%20back%20to%20us.%20The%20more%20detail%20you%20give%2C%20the%20more%20accurate%20your%20quote%20will%20be.%0A%0ACONTACT%0AName%3A%20%0ALast%20name%3A%20%0ABusiness%20name%3A%20%0AEmail%3A%20%0APhone%3A%20%0A%0APROJECT%0AProject%20type%3A%20%0ADo%20you%20have%20an%20existing%20website%3F%20%28URL%20if%20yes%29%3A%20%0ADo%20you%20have%20a%20domain/hosting%20already%3F%3A%20%0ADo%20you%20need%20online%20booking%20or%20appointments%3F%3A%20%0ABudget%3A%20%0ATimeline%3A%20%0A%0ADETAILS%0AProject%20details%3A%20%0A%0A%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%0AThank%20you%2C%0Akoudelkadev"
+    className="hover:text-sky-400 hover:underline transition-colors"
+    className="hover:text-sky-400 hover:underline transition-colors">
+ Email the studio
+</a></button>
 </section>
 
 <section className="pricingBox" id="pricing">

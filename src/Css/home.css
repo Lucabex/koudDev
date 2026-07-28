@@ -321,6 +321,11 @@ margin: 0;
     background: linear-gradient(135deg,rgb(209, 243, 252),var(--azure-deep));
     padding: 125px 130px;
 }
+.getInTouchBox a{
+    text-decoration: none;
+    font-family: var(--font-display);
+    color: white;
+}
 .getEye{
     font-family: var(--font-display);
     font-weight: 900;
