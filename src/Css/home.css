@@ -572,6 +572,10 @@ font-size: 14px;
 color: var(--ice-dim);
 font-weight: 800;
 }
+
+.cardBottom a{
+    color: limegreen;
+}
 #live{
     color: limegreen;
 }

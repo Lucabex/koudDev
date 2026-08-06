@@ -345,7 +345,7 @@ function Home(){
                             <span>Luton Dog Boarding</span>
                         </div>
                         <div className="cardBottom">
-                            <span id="live">Live</span>
+                           <span id="live">Live <a href='https://www.lutondogboarding.co.uk'>www.Lutondogboarding.co.uk</a></span>
                             <h3>Luton Dog Boarding</h3>
                             <p>A full-stack booking platform for a licensed home boarding business, admin dashboard, reviews, and automated booking emails.</p>
 
